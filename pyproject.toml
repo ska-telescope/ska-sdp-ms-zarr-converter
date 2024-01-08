@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "ska-sdp-ms-zarr-converter"
+name = "ms_zarr_converter"
 version = "0.1.0"
 description = "Converts a MeasurementSet (MS) to a Zarr format"
 authors = ["Max Maunder <max.maunder@nag.com>", "Sean Stansill <sean.stansill@nag.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8, <3.12"
+python = ">=3.9, <3.12"
 numpy = "^1.26.3"
 numba = "^0.58.1"
 pandas = "^2.1.4"
