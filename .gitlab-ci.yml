@@ -1,0 +1,26 @@
+stages:
+  - lint
+  - test
+  - pages
+
+# Standardised included jobs
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+# Include CI templates
+include:
+# Python lint
+  - project: 'ska-telescope/templates-repository'
+    file: 'gitlab-ci/includes/python-lint.gitlab-ci.yml'
+
+# Python test
+  - project: 'ska-telescope/templates-repository'
+    file: 'gitlab-ci/includes/python-test.gitlab-ci.yml'
+
+# Docs pages
+  - project: 'ska-telescope/templates-repository'
+    file: 'gitlab-ci/includes/docs-pages.gitlab-ci.yml'
+
+# .post step finalisers eg: badges
+  - project: 'ska-telescope/templates-repository'
+    file: 'gitlab-ci/includes/finaliser.gitlab-ci.yml'
