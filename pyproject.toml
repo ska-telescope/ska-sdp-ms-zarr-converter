@@ -20,6 +20,7 @@ python-casacore = "^3.5.2"
 pytest = "^7.4.4"
 isort = "^5.13.2"
 black = "^23.12.1"
+flake8 = "^7.0.0"
 
 [build-system]
 requires = ["poetry-core"]
