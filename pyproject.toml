@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ms_zarr_converter"
+version = "0.1.0"
+description = "Converts a MeasurementSet (MS) to a Zarr format"
+authors = ["Max Maunder <max.maunder@nag.com>", "Sean Stansill <sean.stansill@nag.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.12"
+numpy = "^1.26.3"
+numba = "^0.58.1"
+pandas = "^2.1.4"
+xarray = "^2023.12.0"
+dask = "^2023.12.1"
+distributed = "^2023.12.1"
+zarr = "^2.16.1"
+python-casacore = "^3.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+isort = "^5.13.2"
+black = "^23.12.1"
+flake8 = "^7.0.0"
+pylint = "^2.17.5"
+pylint-junit = "^0.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
